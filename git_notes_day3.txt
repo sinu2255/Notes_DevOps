@@ -1,0 +1,45 @@
+what is git & github?
+__________________________________---
+git is a version control system simply it faciliates source code management(scm). github is a repository where code is stored and any one can use it
+
+Git Rsa key linking?
+_________________________________________________________-
+first we have to take the publickey and save it in the github repository.then we will get the connectivity
+
+Git clone is used for what?
+_______________________________________
+git clone is used to copy the exisiting repository and creating a new working directory
+
+why git add . is used?
+__________________________________-
+it is used to add all file changes in exsisting directory to staging area
+
+why git commit -m is used?
+______________________________________
+it is used to commit the changes to the head but not to the main branch.'-m' is used to write the message
+note--> every time before you commit you have to git pull
+
+why git push is used?
+____________________________________________--
+it is used to push the changes to the central repository
+
+why git stash is used?
+______________________________________________-
+it will locally store all the changes in a workspace and when needed it will reset the state of workspace with previous commit state
+
+why git pull is used?
+_____________________________________
+it is used to pull all the changes from the main branch of central repository to your feature branch
+note--> every time before commit you have to git pull
+
+git pull origin main
+________________________________________
+it will pull all the changes from central repositoeies main branch to feature branch
+
+git cherrypick
+__________________________________________________--
+it will take one commit id from one branch and place it in the another branch.it is used to undo the changes
+
+git rebase
+______________________________________________________
+it is also like merge but it will create all new commits in the place of previous commits branch
