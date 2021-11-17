@@ -1,0 +1,42 @@
+Linux os families?
+___________________________________________
+one is ubuntu it belongs to debian family
+the other one is centos,Rhel which belongs to redhat
+
+where the log files are stored?
+_______________________________________-
+The Log files are stored in the /var/log
+
+where the configuration files are stored?
+_______________________________________________
+the configuration files are stored in the /etc directory and the core configuration files are stored in /etc/systemd/system
+
+where are the certificates are stored?
+________________________________________________________
+the  certificates are stored in the /srv derectory
+
+where are the instalables are stored in linux?
+________________________________________________________
+the instables are stored in the /usr derectory   ex- ftp,telnet
+
+why /tmp directory is used in linux?
+___________________________________________________
+The /tmp directory is used to store the temporary files
+
+why /opt is used?
+_____________________________________________
+it is used for the installation of add-on application packages and also it is used to see jar files
+
+where the executables files are stored?
+_____________________________________________________-
+the /bin is used see the executable files in the linux  ex- when we run cd /bin -> this is called executable
+
+which command you use to show mounts?
+________________________________________________
+df -h is used to show the mounts
+
+how to know available memory in a paarticular diectory?
+___________________________________________________________________
+du -sh command is used to know the available memory in a particular directory
+
+
