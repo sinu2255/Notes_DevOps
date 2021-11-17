@@ -1,0 +1,68 @@
+what does ps command do?
+_______________________________________
+ps--> process status,it is used to list the currently running processes
+ex- pids-->unique process id
+    tty-->terminal type
+    time
+    cmd
+ps-->options(-a,-d,-t,-r,-x)
+
+what does netstat do?
+____________________________
+it displays network related information such as network connections and route tables
+ex--> netstat -tulpen(tcp,udp,list,port) options (-a,-t,-u,-l,-s,--verbose,-r)
+
+what does telnet do?
+_________________________________
+it is used check the connectivity between machines     ex--> from machine to github.com 2089
+
+what grep is used for?
+global regular expression point is used to search the file
+
+what journalctl will do?
+______________________________________________
+it is used to display all logs
+
+what ping will do?
+______________________________
+it is used to check connection   ex--> ping google.com
+
+why cat command is used?
+__________________________________________
+cat command is used to view the contents of the file
+
+why touch command is used?
+___________________________________________________---
+touch command is used to create files
+
+For what vi command is used?
+____________________________________________________
+vi command is used to edit the file
+press 'i' to enter into the insert mode
+press 'esc' to comeback to command mode
+to save and quit the work ':wq!'
+
+why nslookup command is ued?
+_______________________________________________________
+nameserverlookup command is used for any user enter hostname and find out corresponding ip address or domain name system(dns)record
+ex--> nslookup google.com
+
+what is an ssh port?
+it is used to start the communication between two devices over the network. it will run on port 22
+
+what are http and https ports and where it will run?
+____________________________________________________________________
+a port establishes an endpoint connection between two devices
+http-->80
+https-->443
+
+who to generate publickey and privatekeys?
+__________________________________________________________
+secured shell (ssh)keys
+to generate publickey and private key we have to use 'ssh-keygen'
+privatekey--> it is open ssh
+publickey--> ssh-rsa
+
+what is rsa keys?
+_____________________________________________________
+it uses rsa key and ssh key interchangeably.key based authentication uses to keys publickey and privatekey
