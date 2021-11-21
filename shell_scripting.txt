@@ -1,0 +1,69 @@
+what is kernal?
+___________________________________
+it is an interface b/w hardware and software.it is in operating system(os).
+
+what is shell?
+it translates commands enter by the user to the kernal.
+task input by user -->  translates commands  -->   language understand by kernal.
+
+how to find your shell in cli?
+_______________________________________-
+to find shell you can use
+"echo $0"
+to find all available shells
+"cat /etc/shells"
+to find user shell
+"cat /etc/passwd"
+
+What is shell script?
+____________________________________
+put instructions or commands in a shell and run it. the shell script starts with "#!/bin/bash"
+A good shell script will have comments(#)
+
+types of linux shells?
+___________________________________
+* gnome and kde used in GUI
+* Sh,BASH,CSH and TCSH,KSH used in CLI
+
+How to run shell script?
+_______________________________-
+To run shell script we have absolute path and relative path
+absolute path --> /home/ubuntu/myscript
+relative path --> ./myscript
+
+script naming convention:
+___________________________________
+-> Always create a scripting directory
+-> script name should identify function
+-> script name shsould end with .sh or .bash or required .shell
+
+script file permissions:
+_______________________________-----
+All scripts to be executed should have proper executaable permissions
+rwxrwxrwx--> 777 will have all permissions
+to change permissions "chmod 777 file name or chmod a+x file name"
+
+scrpit format:
+_____________________________________________
+* To define shell (#!/bin/bash)
+* commets(#)
+* define variables (eg-name=srinu)
+* commands (echo,cp,grep,etc)
+* statements (if,then,while,for,do,etc)
+
+example scripting:-
+_______________________________________-
+#!/bin/bash
+# author: srinivas
+# date: 21/11/2021
+# discription: it is an example for scripting
+
+a=`hostname`
+echo name of  myserver is $a
+echo
+echo what is your name?
+read b
+echo what is your favorite sport?
+read c
+echo hello $b
+echo $c is good sport
