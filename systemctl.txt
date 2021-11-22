@@ -1,0 +1,42 @@
+what is systemctl?
+____________________________
+systemctl is a utility which is responisble for examining and controlling the systemd system and service manager.
+systemD--> systemctl,journalctl
+
+commands:--
+_____________________________________
+systemctl status servicename.service
+systemctl start servicename
+systemctl stop servicename
+_________________________________________
+systemctl list-units-->it is used to display all active systemd sevices
+____________________________________________-
+to list all services we have to run command
+systemctl list-units --type=service --all
+
+to create a service in systemd we have to use the command
+touch /etc/systemd/system/servicename
+next we have change the file permissions
+chmod 644 /etc/systemd/system/servicename
+net we have to open the vi editor and you have to edit like this
+[Unit]
+Description=This is the manually created service
+After=network.target
+
+[Service]
+ExecStart=/path/to/executable
+
+[Install]
+WantedBy=multi-user.target
+
+
+to remove service we have to use rm -r /etc/systemd/system/servicename
+
+ports::
+_____________________________-
+reserved port range or well established or know ports --> 1 to 1024.
+
+Ephemeral ports are managed internally by the operating system-->  49151 to 61000.
+eg:- your broswer(ephemeral port) to webserver(httpport 80)
+
+the ports that cannot be used for deploying is 1024-49151
