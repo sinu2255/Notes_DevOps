@@ -40,3 +40,62 @@ Ephemeral ports are managed internally by the operating system-->  49151 to 6100
 eg:- your broswer(ephemeral port) to webserver(httpport 80)
 
 the ports that cannot be used for deploying is 1024-49151
+
+what is journalctl?
+______________________________________--
+for suppose if you have a systemd issue when a sevice refuses to start you can troubleshoot the problem by entering this utility.
+eg:-- journalctl you will get logs with date month time and process id(pid) the last bit will be journald
+
+to go into particular sesrvice "journalctl -u servicename"
+
+what is systemd?
+______________________________________________________
+Systemd provides a standard process for controlling what programs run when a Linux system boots up
+it will start the core programs running.It also starts a journal of system activity, the network stack, a cron-style job scheduler, user logins, and many other jobs.
+
+what is curl?
+______________________________----
+curl is a command line utility for transfering data from or to a server designed to work without user interiation
+with curl you can dowload or upload data using supported protocals including http,https,scp,sftp and ftp.
+eg:-- curl www.google.com
+
+for proxies we can use "curl -x 192.118.44.1:8888 https://linux.com"
+for username and password "curl -u username:password -x 192.118.44.1:8888 https://linux.com"
+to enter without proxy we can use -- "curl -noproxy https://linux.com"
+to save the results of curl command "curl -o https://linux.com"
+
+what is http protocal?
+___________________________________________
+http is a protocal for fetching resources such as html documents.it is a client-server protocal
+
+components of http-based systems: client<-->proxy<-->server
+each individual request is sent to server,which handles it and provides a response.b/w client and server there a numerous entities called proxies.
+
+what is the structure of http?
+_______________________________________________-
+A http request is divided into three parts
+1) request line
+2) header
+3) message body
+A http response is divided into three parts
+1) status line
+2) header
+3) message body
+
+http methods:
+_______________________________
+available http methods are get,post,patch,put,delete
+
+http response codes:
+_____________________________________
+1) informational responses:  (100-199)
+2) sucessful responses: (200-299)
+3) redirection responses: (300-399)
+4) client error responses: (400-499)
+5) sever error responses: (500-599)
+
+what is keepalived?
+_________________________________________________
+A keepalive is a message sent by one device to another to check thatthe link b/w to is operating or prevent the link from being broken.
+for example if we have a loadbalancer we have to check the servers that are connected to loadbalancer for that we will use keepalive
+
